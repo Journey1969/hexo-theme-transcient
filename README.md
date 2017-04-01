@@ -2,7 +2,7 @@
 
 A simple theme for [Hexo](https://hexo.io)
 
-Here is the [Preview](http://hexo.io/hexo-theme-landscape/)
+Here is the [Preview](http://journey1969.com)
 
 ## Installation & Enable
 
