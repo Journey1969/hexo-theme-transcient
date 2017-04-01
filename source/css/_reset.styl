@@ -5,6 +5,17 @@ html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, td, tr, table, pre, figure
 html
   font-family: 'Droid Sans'
 
+body
+  &::-webkit-scrollbar
+    width: 8px
+
+  &::-webkit-scrollbar-track-piece
+    background: rgba(#b9b9b9, 0.5)
+
+  &::-webkit-scrollbar-thumb
+    background: #888
+    border-radius: 5px
+
 a
   text-decoration: none
 
