@@ -1,0 +1,17 @@
+<article class="post">
+  <h1><%= post.title %></h1>
+  <% if (post.excerpt && index){ %>
+    <div class="post-content"><%- post.excerpt %></div>
+    <% if (theme.excerpt_link){ %>
+     <p class="read-more-link">
+       <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+     </p>
+    <% } %>
+  <% } else { %>
+    <div class="post-content"><%- post.content %></div>
+  <% } %>
+
+  <% if(index) { %>
+    <div class="seperate-bar"></div>
+  <% } %>
+</article>

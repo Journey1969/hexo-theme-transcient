@@ -1,0 +1,77 @@
+// variables
+
+light-gray = #888
+light-black = #444
+color-white = #fff
+
+square-define(width=2rem, line_height=2rem)
+  display: block
+  height: 2rem
+  width: width
+  margin: 0 1rem 1rem 0
+  border-radius: 10%
+
+  text-align: center
+  line-height: line_height
+
+// ----------------------------------------
+
+#main-container
+  max-width: 900px
+  margin: 0 auto
+  padding: 1rem
+  box-sizing: border-box
+
+  &:before
+    content: ""
+    display: block
+    height: 0
+    width: 800px
+    visibility: hidden
+
+  .read-more-link
+    margin: 2rem auto 1rem
+    text-align: center
+    a
+      padding: 0.5rem
+      color: light-black
+      border: 1px solid light-black
+      border-radius: 5px
+
+  .seperate-bar
+    margin-top: 2rem
+    border-bottom: 1px dashed light-gray
+
+#pagination-container
+  max-width: 900px
+  margin: 1rem auto
+
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  .page-number
+    square-define()
+    color: light-gray
+
+    &:hover
+      color: color-white
+      background-color: light-gray
+
+  .current
+    color: color-white
+    background-color: light-black
+    &:hover
+      color: color-white
+      background-color: light-black
+
+  .extend
+    square-define(3rem)
+    color: light-gray
+
+    &:hover
+      color: color-white
+      background-color: light-gray
+
+  .space
+    square-define(2rem, 1.5rem)

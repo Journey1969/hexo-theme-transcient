@@ -1,0 +1,98 @@
+.post
+  width: 100%
+  margin: 0 auto
+  padding: 1rem
+  box-sizing: border-box
+
+  h1
+    font-size: 2rem
+    margin: 1rem 0
+
+  h2
+    font-size: 1.6rem
+    margin: 0.8rem 0
+
+  h3
+    font-size: 1.4rem
+    margin: 0.6rem 0
+
+  h4
+    font-size: 1.2rem
+    margin: 0.6rem 0
+
+  h5
+    font-size: 1rem
+    margin: 0.6rem 0
+
+  h6
+    font-size: 1rem
+    margin: 0.6rem 0
+
+  hr
+    margin: 1rem 0
+
+  img
+    width: 100%
+
+  p
+    line-height: 2rem
+
+  code
+    padding: 1px 2px
+    margin: 0 2px
+
+    box-sizing: border-box
+    border: 1px solid #ddd
+    border-radius: 2px
+    background-color: #F8F8F8
+
+    font-family: "Consolas"
+
+  ul, ol
+    list-style-position: inside
+    margin: 0.5rem 0
+    padding-left: 1rem
+
+  .highlight
+    margin: 2rem 1rem
+    border-radius: 5px
+    position: relative
+    overflow: auto
+
+    font-size: 16px
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2)
+    background-color: #292929
+
+    &:before
+      content: attr(data-code-type)
+      position: absolute
+      top: 0
+      left: 0
+
+      color: #fff
+      font-family: "Consolas"
+      text-indent: 1rem
+      line-height: 2rem
+
+    table
+      width: 100%
+      border-spacing: 0
+      border-top: 2rem solid #393939
+
+    tbody
+      display: block
+      padding: 1rem
+
+    span, .line
+      color: #fff
+      font-size: 0.9rem
+      font-family: "Consolas"
+      &::selection
+        color: #fff
+        background: #00BFFF
+
+    .line
+      height: 1.5rem
+      line-height: 1.5rem
+
+  @import "_highlight"
