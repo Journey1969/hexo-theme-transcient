@@ -31,8 +31,30 @@
   hr
     margin: 1rem 0
 
-  img
-    width: 100%
+  br
+    line-height: 0
+
+  .img-wrapper
+    margin: 1rem 0
+    min-height: 400px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    img
+      display: block
+      max-width: 640px
+      max-height: 400px
+      margin: 0 auto
+      box-sizing: border-box
+      border: 10px solid #eee
+
+    .img-caption
+      padding-top: 5px
+      color: #aaa
+      font-size: 14px
 
   p
     line-height: 2rem
