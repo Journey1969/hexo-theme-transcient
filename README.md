@@ -22,6 +22,8 @@ Here is the [Preview](http://journey1969.com)
 
 - [imagesLoaded.js](http://imagesloaded.desandro.com/)
 
+- [fancybox.js](http://fancybox.net/)
+
 ## TODO
 
 [√] basic theme style
@@ -29,6 +31,10 @@ Here is the [Preview](http://journey1969.com)
 [√] code highlight
 
 [√] mobile adaption
+
+[√] fancybox
+
+[√] images loading animation & placeholder
 
 [×] css uglify
 
