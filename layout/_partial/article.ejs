@@ -4,7 +4,7 @@
     <div class="post-content"><%- post.excerpt %></div>
     <% if (theme.excerpt_link){ %>
      <p class="read-more-link">
-       <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+       <a href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
      </p>
     <% } %>
   <% } else { %>
