@@ -1,5 +1,12 @@
 <article class="post">
-  <h1><%= post.title %></h1>
+  <header class="post-header">
+    <% if (index) { %>
+      <h1 class="post-title"><a class="in-index" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
+    <% } else { %>
+      <h1 class="post-title"><a><%= post.title %></a></h1>
+      <p class="post-detail">&rArr; Posted on <%= date(post.date, 'YYYY/MM/DD') %></p>
+    <% } %>
+  </header>
   <% if (post.excerpt && index){ %>
     <div class="post-content"><%- post.excerpt %></div>
     <% if (theme.excerpt_link){ %>

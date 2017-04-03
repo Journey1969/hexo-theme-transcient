@@ -1,0 +1,46 @@
+<div id="archive-container">
+  <%
+    let posts = [];
+    let current_year = -1;
+    site.posts.each(function(post) { posts.push(post); });
+
+    // get full date
+    function getDate(post) {
+        return date(post.date, 'YYYY-MM-DD HH:mm:ss');
+    }
+
+    // transform num to month name
+    function getMonthName(month_num) {
+      let month_name = ['EMPTY', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      return month_name[month_num];
+    }
+
+    function getDayFormat(day_num) {
+      if (day_num == 1) return "1st";
+      else if (day_num == 2) return "2nd";
+      else if (day_num == 3) return "3rd";
+      else return day_num + "th";
+    }
+
+    // insertion sorting
+    for (let i = 1; i < posts.length; i++) {
+        let key = posts[i];
+        let j = i - 1;
+        while (j >= 0 && getDate(posts[j]) < getDate(key)) {
+            posts[j + 1] = posts[j];
+            j--;
+        }
+        posts[j + 1] = key;
+    }
+  %>
+
+  <% for(let i = 0; i < posts.length; i++) { %>
+    <% if (posts[i].date.year() !== current_year) { %>
+      <p class="archive-year"><%= posts[i].date.year() %></p>
+      <% current_year = posts[i].date.year(); %>
+    <% } %>
+    <p class="archive-item">
+      <span class="archive-month-day">[<%= getMonthName(date(posts[i].date, 'M')) %>.<%= date(posts[i].date, 'DD') %>]</span><a href="<%- url_for(posts[i].path) %>" class="archive-title"><%= posts[i].title %></a>
+    </p>
+  <% } %>
+</div>

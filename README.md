@@ -1,4 +1,4 @@
-# Transcient
+# Transient
 
 A simple theme for [Hexo](https://hexo.io)
 
@@ -9,12 +9,12 @@ Here is the [Preview](http://journey1969.com)
 1. Install
 
    ``` bash
-   $ git clone https://github.com/Journey1969/hexo-theme-transcient.git
+   $ git clone https://github.com/Journey1969/hexo-theme-transient.git
    ```
 
 2. Enable
 
-   Modify `theme` setting in `_config.yml` to `transcient`.
+   Modify `theme` setting in `_config.yml` to `transient`.
 
 ## jQuery relatived
 
@@ -49,6 +49,6 @@ Here is the [Preview](http://journey1969.com)
 
 [×] function: back to top
 
-[×] page: archive
+[√] page: archive
 
 [×] page: about
