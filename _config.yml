@@ -1,7 +1,7 @@
 # Theme style
 ## normal: index will show articles' excerpt
 ## plain: index will show archives
-theme_style: plain
+theme_style: normal
 
 # meta in head
 meta:
@@ -17,11 +17,11 @@ meta:
 # Header
 menu:
   home: /
-  archive: /archive
+  archives: /archives
   about: /about
 
 # Content
-excerpt_link: Read More
+excerpt_link: true
 
 # Others
 favicon: /favicon.ico

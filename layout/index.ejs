@@ -2,12 +2,11 @@
   <% page.posts.each(function(post) { %>
     <%- partial('_partial/article', {post: post, index: true}) %>
   <% }) %>
-
   <% if (page.total > 1) { %>
     <nav id="pagination-container">
       <%- paginator({
-        prev_text: "PREV",
-        next_text: "NEXT"
+        prev_text: __('prev'),
+        next_text: __('next')
       }) %>
     </nav>
   <% } %>

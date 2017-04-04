@@ -2,11 +2,11 @@
   <div id="header-container">
     <p id="header-title"></p>
     <nav id="header-nav">
-      <a class="header-nav-link" href="<%- url_for(theme.menu.home) %>">Home</a>
+      <a class="header-nav-link" href="<%- url_for(theme.menu.home) %>"><%= __('home') %></a>
       <% if (theme.theme_style === 'normal') { %>
-        <a class="header-nav-link" href="<%- url_for(theme.menu.archive) %>">Archive</a>
+        <a class="header-nav-link" href="<%- url_for(theme.menu.archives) %>"><%= __('archives') %></a>
       <% } %>
-      <a class="header-nav-link" href="<%- url_for(theme.menu.about) %>">About</a>
+      <a class="header-nav-link" href="<%- url_for(theme.menu.about) %>"><%= __('about') %></a>
     </nav>
   </div>
 </header>

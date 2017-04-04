@@ -45,12 +45,10 @@ Here is the [Preview](http://journey1969.com)
 
 [√] images loading animation & placeholder
 
-[×] css uglify
-
 [×] media query
 
-[×] function: back to top
-
-[√] page: archive
+[√] page: archives
 
 [√] page: about
+
+[√] i18n support: English and Simplified Chinese

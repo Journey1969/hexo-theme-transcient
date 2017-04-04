@@ -1,9 +1,9 @@
 <footer id="footer">
   <div id="footer-container">
     <ul id="footer-list">
-      <li class="footer-list-item footer-copyright">&copy;2017 <a class="footer-list-item-link" href="<%= config.url %>"><%= config.url.replace(/http:\/\/|https:\/\//, "") %></a> All Rights Reserved</li>
-      <li class="footer-list-item">Powered by <a class="footer-list-item-link" href="https://hexo.io" target="_blank">Hexo</a></li>
-      <li class="footer-list-item">Theme: <a class="footer-list-item-link" href="https://github.com/Journey1969/hexo-theme-transient" target="_blank">Transient</a></li>
+      <li class="footer-list-item footer-copyright">&copy;2017 <a class="footer-list-item-link" href="<%= config.url %>"><%= config.url.replace(/http:\/\/|https:\/\//, "") %></a> <%= __('copyright') %></li>
+      <li class="footer-list-item"><%= __('power_by') %> <a class="footer-list-item-link" href="https://hexo.io" target="_blank">Hexo</a></li>
+      <li class="footer-list-item"><%= __('theme') %> <a class="footer-list-item-link" href="https://github.com/Journey1969/hexo-theme-transient" target="_blank">Transient</a></li>
     </ul>
   </div>
 </footer>

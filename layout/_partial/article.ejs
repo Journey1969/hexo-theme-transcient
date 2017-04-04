@@ -12,14 +12,14 @@
       <h1 class="post-title"><a class="in-index" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
     <% } else { %>
       <h1 class="post-title"><a><%= post.title %></a></h1>
-      <p class="post-detail">&rArr; Posted on <%= getMonthName(date(post.date, 'M')) %> <%= date(post.date, 'DD, YYYY') %></p>
+      <p class="post-detail">&rArr; <%= __('posted_on') %> <%= getMonthName(date(post.date, 'M')) %> <%= date(post.date, 'DD, YYYY') %></p>
     <% } %>
   </header>
   <% if (post.excerpt && index){ %>
     <div class="post-content"><%- post.excerpt %></div>
     <% if (theme.excerpt_link){ %>
      <p class="read-more-link">
-       <a href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
+       <a href="<%- url_for(post.path) %>"><%= __('read_more') %></a>
      </p>
     <% } %>
   <% } else { %>
