@@ -21,14 +21,9 @@
                 var origin_img_src = img.attr('src');
                 var external_img = img.parent()[0].nodeName === "P";
 
-                // create compressed image's source path
-                var path = origin_img_src.split('/');
-                path.push("min__" + path.pop());
-                min_img_src = path.join("/");
-
                 // start decorating img
                 img.addClass('lazy');
-                img.attr('data-original', external_img ? origin_img_src : min_img_src);
+                img.attr('data-original', origin_img_src);
                 img.attr('src', external_img ? origin_img_src : loading_img_base64);
 
                 // start wrapper
@@ -40,7 +35,6 @@
                 img.on('load', function(err) {
                     if (img.attr('src') !== loading_img_base64){
                         $(this).addClass('img-loaded');
-                        $(this).css('background-image', 'url(' + img.attr('src').replace('min__', '') + ')');
                     }
                 })
             });
