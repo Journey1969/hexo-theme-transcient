@@ -4,6 +4,8 @@ A simple theme for [Hexo](https://hexo.io)
 
 Here is the [Preview](http://journey1969.com)
 
+![Transient Preview](hexo-theme-transient-preview.png)
+
 ## Installation & Enable
 
 1. Install
@@ -51,4 +53,4 @@ Here is the [Preview](http://journey1969.com)
 
 [√] page: archive
 
-[×] page: about
+[√] page: about

@@ -9,18 +9,18 @@
   .post-title
     font-size: 2rem
     a
-      color: #000
+      color: color-black
     .in-index
       &:visited
-        color: #000
+        color: color-black
       &:hover
-        color: #276bc4
+        color: site-main-blue
 
   .post-detail
     margin-top: 0.5rem
     padding-bottom: 0.5rem
-    border-bottom: 1px dashed #aaa
-    color: #888
+    border-bottom: 1px dashed site-main-gray
+    color: site-main-gray
     font-size: 1rem
 
 .post-content
@@ -58,7 +58,7 @@
     .img-not-found
       width: 300px
       margin: 0 auto
-      background-color: #eee
+      background-color: site-main-light-gray
 
   .img-wrapper
     width: 100%
@@ -77,13 +77,13 @@
         max-height: 400px
         box-sizing: border-box
       .img-loaded
-        border: 5px solid #eee
+        border: 5px solid site-main-very-light-gray
         background-repeat: no-repeat
         background-position: -9999px -9999px
 
     .img-caption
       text-align: center
-      color: #aaa
+      color: site-main-gray
       font-size: 14px
 
   p
@@ -92,9 +92,9 @@
   code
     padding: 0 5px
     border-radius: 3px
-    border: 1px solid #CCC
+    border: 1px solid site-main-light-gray
     box-sizing: border-box
-    background-color: #F6F6F6
+    background-color: site-main-very-light-gray
     font-size: 0.9rem
     font-family: "Roboto Mono"
 
@@ -106,8 +106,18 @@
   li
     line-height: 1.5rem
 
+  blockquote
+    max-width: 100%
+    margin: 1rem 0
+    p
+      padding: 1rem
+      background-color: site-main-very-light-gray
+      color: site-main-black
+      border-left: 5px solid site-main-light-gray
+      box-sizing: border-box
+
   .highlight
-    margin: 2rem 1rem
+    margin: 1rem 0
     border-radius: 5px
     position: relative
     overflow: auto
@@ -124,11 +134,12 @@
 
       color: #fff
       font-family: "Roboto Mono"
+      font-size: 0.8rem
       text-indent: 1rem
-      line-height: 2rem
+      line-height: 1.5rem
 
     &::-webkit-scrollbar-track
-      background-color: #444
+      background-color: site-main-black
       border-radius: 5px
 
     &::-webkit-scrollbar
@@ -138,22 +149,27 @@
       border-radius: 5px
       background-color: rgba(#808080, 0.4)
 
+    .gutter
+      padding: 0 1rem 0 0.5rem
+      .line
+        color: site-main-gray
+
     table
       width: 100%
       border-spacing: 0
-      border-top: 2rem solid #393939
+      border-top: 1.5rem solid #393939
 
     tbody
       display: block
-      padding: 1rem
+      padding: 0.5rem
 
     span, .line
       color: #fff
-      font-size: 0.9rem
+      font-size: 0.8rem
       font-family: "Roboto Mono"
       &::selection
-        color: #fff
-        background: #00BFFF
+        color: color-white
+        background: site-main-blue
 
     .line
       height: 1.5rem

@@ -3,7 +3,6 @@
 
 #footer-container
   min-height: 120px
-
   display: flex
   align-items: center
   justify-content: center
@@ -14,13 +13,17 @@
   justify-content: center
   padding: 1rem
 
-  list-style: none
-  color: #aaa
+  .footer-copyright
+    flex: 0 0 100%
+    text-align: center
 
   .footer-list-item
-    margin-right: 1rem
-
+    margin: 0 0.5rem
+    list-style: none
+    color: site-main-gray
     .footer-list-item-link
-      color: #aaa
+      color: site-main-gray
+      &:visited
+        color: site-main-gray
       &:hover
-        color: #fff
+        color: color-white

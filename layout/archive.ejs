@@ -2,6 +2,8 @@
   <%
     let posts = [];
     let current_year = -1;
+
+    // collect all posts
     site.posts.each(function(post) { posts.push(post); });
 
     // get full date
@@ -11,15 +13,8 @@
 
     // transform num to month name
     function getMonthName(month_num) {
-      let month_name = ['EMPTY', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      return month_name[month_num];
-    }
-
-    function getDayFormat(day_num) {
-      if (day_num == 1) return "1st";
-      else if (day_num == 2) return "2nd";
-      else if (day_num == 3) return "3rd";
-      else return day_num + "th";
+        let month_name = ['EMPTY', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return month_name[month_num];
     }
 
     // insertion sorting

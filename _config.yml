@@ -1,11 +1,27 @@
+# Theme style
+## normal: index will show articles' excerpt
+## plain: index will show archives
+theme_style: plain
+
+# meta in head
+meta:
+  author: Journey1969
+  description: Journey1969's Personal Blog
+  keywords: Journey1969, Blog, Front-End
+  og:
+    site_name: Journey1969
+    description: Journey1969's Personal Blog
+    type:
+      article: article
+
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  home: /
+  archive: /archive
+  about: /about
 
 # Content
 excerpt_link: Read More
-fancybox: true
 
-# Miscellaneous
+# Others
 favicon: /favicon.ico

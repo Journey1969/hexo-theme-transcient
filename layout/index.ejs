@@ -1,12 +1,16 @@
-<% page.posts.each(function(post) { %>
-  <%- partial('_partial/article', {post: post, index: true}) %>
-<% }) %>
+<% if (theme.theme_style === 'normal') { %>
+  <% page.posts.each(function(post) { %>
+    <%- partial('_partial/article', {post: post, index: true}) %>
+  <% }) %>
 
-<% if (page.total > 1) { %>
-  <nav id="pagination-container">
-    <%- paginator({
-      prev_text: "PREV",
-      next_text: "NEXT"
-    }) %>
-  </nav>
+  <% if (page.total > 1) { %>
+    <nav id="pagination-container">
+      <%- paginator({
+        prev_text: "PREV",
+        next_text: "NEXT"
+      }) %>
+    </nav>
+  <% } %>
+<% } else if (theme.theme_style === 'plain'){ %>
+  <%- partial('archive') %>
 <% } %>

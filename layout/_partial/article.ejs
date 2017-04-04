@@ -1,10 +1,18 @@
+<%
+    // transform num to month name
+    function getMonthName(month_num) {
+        let month_name = ['EMPTY', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return month_name[month_num];
+    }
+%>
+
 <article class="post">
   <header class="post-header">
     <% if (index) { %>
       <h1 class="post-title"><a class="in-index" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
     <% } else { %>
       <h1 class="post-title"><a><%= post.title %></a></h1>
-      <p class="post-detail">&rArr; Posted on <%= date(post.date, 'YYYY/MM/DD') %></p>
+      <p class="post-detail">&rArr; Posted on <%= getMonthName(date(post.date, 'M')) %> <%= date(post.date, 'DD, YYYY') %></p>
     <% } %>
   </header>
   <% if (post.excerpt && index){ %>

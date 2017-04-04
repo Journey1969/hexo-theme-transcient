@@ -2,9 +2,11 @@
   <div id="header-container">
     <p id="header-title"></p>
     <nav id="header-nav">
-      <a class="header-nav-link" href="<%- url_for() %>">Home</a>
-      <a class="header-nav-link" href="<%- url_for('/archives') %>">Archives</a>
-      <a class="header-nav-link" href="#">About</a>
+      <a class="header-nav-link" href="<%- url_for(theme.menu.home) %>">Home</a>
+      <% if (theme.theme_style === 'normal') { %>
+        <a class="header-nav-link" href="<%- url_for(theme.menu.archive) %>">Archive</a>
+      <% } %>
+      <a class="header-nav-link" href="<%- url_for(theme.menu.about) %>">About</a>
     </nav>
   </div>
 </header>

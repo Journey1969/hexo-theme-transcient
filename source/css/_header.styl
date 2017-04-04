@@ -2,10 +2,11 @@
   background: -webkit-linear-gradient(240deg, #00CED1, #4169E1)
 
 #header-container
-  max-width: 900px
-  height: 200px
+  max-width: container-max-width
+  height: 240px
   padding: 1rem
   margin: 0 auto
+  box-sizing: border-box
 
   display: flex
   flex-direction: column
@@ -23,6 +24,8 @@
   display: flex
   .header-nav-link
     margin: 0 0.8rem
-    color: #ddd
+    color: site-main-light-gray
+    &:visited
+      color: site-main-light-gray
     &:hover
-      color: #fff;
+      color: color-white

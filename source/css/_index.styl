@@ -1,9 +1,4 @@
-// variables
-
-light-gray = #888
-light-black = #444
-color-white = #fff
-
+// mixin
 square-define(width=2rem, line_height=2rem)
   display: block
   height: 2rem
@@ -17,8 +12,8 @@ square-define(width=2rem, line_height=2rem)
 // ----------------------------------------
 
 #main-container
-  max-width: 800px
-  min-height: 900px
+  max-width: container-max-width
+  min-height: main-container-min-height
   margin: 0 auto
   padding: 1rem
   box-sizing: border-box
@@ -27,7 +22,7 @@ square-define(width=2rem, line_height=2rem)
     content: ""
     display: block
     height: 0
-    width: 800px
+    width: container-max-width
     visibility: hidden
 
   .read-more-link
@@ -35,19 +30,19 @@ square-define(width=2rem, line_height=2rem)
     text-align: center
     a
       padding: 0.5rem
-      color: light-black
-      border: 1px solid light-black
+      color: site-main-black
+      border: 1px solid site-main-black
       border-radius: 5px
       &:hover
-        color: #30a3d4
-        border-color: #30a3d4
+        color: site-main-blue
+        border-color: site-main-blue
 
   .seperate-bar
     margin-top: 2rem
-    border-bottom: 1px dashed light-gray
+    border-bottom: 1px dashed site-main-gray
 
 #pagination-container
-  max-width: 800px
+  max-width: container-max-width
   margin: 1rem auto
 
   display: flex
@@ -56,24 +51,28 @@ square-define(width=2rem, line_height=2rem)
 
   .page-number
     square-define()
-    color: light-gray
+    color: site-main-gray
+    &:visited
+      color: site-main-gray
     &:hover
       color: color-white
-      background-color: light-gray
+      background-color: site-main-gray
 
   .current
     color: color-white
-    background-color: light-black
+    background-color: site-main-black
     &:hover
       color: color-white
-      background-color: light-black
+      background-color: site-main-black
 
   .extend
     square-define(3rem)
-    color: light-gray
+    color: site-main-gray
+    &:visited
+      color: site-main-gray
     &:hover
       color: color-white
-      background-color: light-gray
+      background-color: site-main-gray
 
   .space
     square-define(2rem, 1.5rem)
