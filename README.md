@@ -80,5 +80,6 @@ meta:
 - 字体：英文为`Roboto`，代码为`Roboto Mono`，简体中文为`微软雅黑`(Win)或`思源黑体`(Mac)
 
 
-## 更多细节
-请查阅本主题的 [Wiki](https://github.com/Journey1969/hexo-theme-transient/wiki)
+## Contact me
+
+如有疑问，欢迎发送邮件至 journey1969@163.com 与我取得联系
