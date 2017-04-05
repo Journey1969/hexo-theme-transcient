@@ -4,7 +4,6 @@
 
 ![Theme Preview](theme-preview.png)
 
----
 
 ## 安装
 
@@ -13,6 +12,7 @@
  $ git clone https://github.com/Journey1969/hexo-theme-transient.git themes/transient
  ```
 
+ 
 ## 启用主题
 
 修改项目根目录中的`_config.yml`，将`theme`字段的值修改为`transient`
@@ -22,6 +22,7 @@
 ## Themes: https://hexo.io/themes/
 theme: transient
 ```
+
 
 ## 启用关于(About)页
 
@@ -45,6 +46,7 @@ theme: transient
 
 关于页为自定义页面，默认内容为主题作者的个人信息。可以通过修改主题中的`about.ejs`和`_about.styl`来自定义内容。
 
+
 ## Meta标签
 
 用户需要自行修改`/themes/transient/_config.yml`中`meta`的各子项来正确定义页面头部的meta信息
@@ -62,7 +64,6 @@ meta:
       article: article
 ```
 
----
 
 ## Features
 
@@ -78,7 +79,6 @@ meta:
 
 - 字体：英文为`Roboto`，代码为`Roboto Mono`，简体中文为`微软雅黑`(Win)或`思源黑体`(Mac)
 
----
 
 ## 更多细节
 请查阅本主题的 [Wiki](https://github.com/Journey1969/hexo-theme-transient/wiki)
