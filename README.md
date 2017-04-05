@@ -1,54 +1,84 @@
 # Transient
 
-A simple theme for [Hexo](https://hexo.io)
+一个最简化的[Hexo](https://hexo.io)主题，[在线预览](http://journey1969.com)
 
-Here is the [Preview](http://journey1969.com)
+![Theme Preview](theme-preview.png)
 
-![Transient Preview](hexo-theme-transient-preview.png)
+---
 
-## Installation & Enable
+## 安装
 
-1. Install
+在Hexo项目根目录下执行：
+ ``` bash
+ $ git clone https://github.com/Journey1969/hexo-theme-transient.git themes/transient
+ ```
 
-   ``` bash
-   $ git clone https://github.com/Journey1969/hexo-theme-transient.git
-   ```
+## 启用主题
 
-2. Enable
+修改项目根目录中的`_config.yml`，将`theme`字段的值修改为`transient`
+``` yml
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: transient
+```
 
-   Modify `theme` setting in `_config.yml` to `transient`.
+## 启用关于(About)页
 
-## jQuery relatived
+启用主题后，访问`/about`路径会提示`Cannot GET /about/`，需要进行以下操作：
 
-- jQuery
+1. 在项目根目录下执行：
 
-- [imagesLoaded.js](http://imagesloaded.desandro.com/)
-
-- [fancybox.js](http://fancybox.net/)
-
-## To Improve
-
-- 在`config.yml`中开启了[资源文件管理功能](https://hexo.io/zh-cn/docs/asset-folders.html)后，使用以下方式引用的图片将会进行**懒加载**和**原图预加载**，而用`![](image.jpg)`的方式引用则只会正常加载。
+  ``` bash
+  $ hexo new page about
   ```
-  {% asset_img example.jpg This is an example image %}
+
+2. 修改`/source/about/index.md`中的内容为：
+
+  ```
+  ---
+  layout: about
+  ---
   ```
 
-## TODO
+这样，关于页的内容将会以`/themes/transient/layout/about.ejs`为模板进行渲染。
 
-[√] basic theme style
+关于页为自定义页面，默认内容为主题作者的个人信息。可以通过修改主题中的`about.ejs`和`_about.styl`来自定义内容。
 
-[√] code highlight
+## Meta标签
 
-[√] mobile adaption
+用户需要自行修改`/themes/transient/_config.yml`中`meta`的各子项来正确定义页面头部的meta信息
 
-[√] fancybox
+``` yml
+# meta in head
+meta:
+  author: YOUR_NAME
+  description: YOUR_NAME's Blog
+  keywords: YOUR_NAME, Blog
+  og:
+    site_name: YOUR_NAME
+    description: YOUR_NAME's Blog
+    type:
+      article: article
+```
 
-[√] images loading animation & placeholder
+---
 
-[×] media query
+## Features
 
-[√] page: archives
+- 高度简化，至多包含4种页面：首页，文章，档案，关于
 
-[√] page: about
+- 可以将首页(Home)设置为档案页(Archives)，进一步简化
 
-[√] i18n support: English and Simplified Chinese
+- 使用 [fancybox](http://fancybox.net/) 优化图片查看体验
+
+- 使用 [lazyload](http://www.appelsiini.net/projects/lazyload) 进行图片懒加载
+
+- 支持代码高亮
+
+- 字体：英文为`Roboto`，代码为`Roboto Mono`，简体中文为`微软雅黑`(Win)或`思源黑体`(Mac)
+
+---
+
+## 更多细节
+请查阅本主题的 [Wiki](https://github.com/Journey1969/hexo-theme-transient/wiki)

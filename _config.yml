@@ -5,12 +5,12 @@ theme_style: normal
 
 # meta in head
 meta:
-  author: Journey1969
-  description: Journey1969's Personal Blog
-  keywords: Journey1969, Blog, Front-End
+  author: YOUR_NAME
+  description: YOUR_NAME's Blog
+  keywords: YOUR_NAME, Blog
   og:
-    site_name: Journey1969
-    description: Journey1969's Personal Blog
+    site_name: YOUR_NAME
+    description: YOUR_NAME's Blog
     type:
       article: article
 

@@ -1,10 +1,10 @@
 {
-  "name": "hexo-theme-transcient",
+  "name": "hexo-theme-transient",
   "version": "1.0.0",
-  "description": "A theme for hexo",
+  "description": "A highly simplified theme for hexo",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Journey1969/hexo-theme-transcient.git"
+    "url": "git+ssh://git@github.com/Journey1969/hexo-theme-transient.git"
   },
   "keywords": [
     "hexo",
@@ -15,7 +15,7 @@
   "author": "me@journey1969.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Journey1969/hexo-theme-transcient/issues"
+    "url": "https://github.com/Journey1969/hexo-theme-transient/issues"
   },
-  "homepage": "https://github.com/Journey1969/hexo-theme-transcient#readme"
+  "homepage": "https://github.com/Journey1969/hexo-theme-transient#readme"
 }
